@@ -149,13 +149,16 @@ void SortAndSearch::selectionSort()
 			if (arrayTwo[ i ] < minValue) {
 				minValue = arrayTwo[ i ];
 				minIndex = i;
-
-				selectionCount++;	// count exchanges made
 			}
 		}
 
 		arrayTwo[ minIndex ] = arrayTwo[ startScan ];
-		arrayTwo[ startScan ] = minValue;
+		
+		if ( minValue != arrayTwo[ startScan ] ) {
+			arrayTwo[startScan] = minValue;     // the exchange happens here
+
+			selectionCount++;                   // count exchanges made
+		}
 	}
 }
 
