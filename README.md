@@ -6,6 +6,7 @@
 
 ### [Issues](https://github.com/olzaragoza/sortandsearch/issues) [![Help](https://img.shields.io/badge/help-wanted-orange.svg)](https://github.com/olzaragoza/sortandsearch/issues)
 - [value of selection sort exchanges incorrect](https://github.com/olzaragoza/sortandsearch/issues/1)
+[![Help](https://img.shields.io/badge/fix-pending-yellow.svg)](https://github.com/olzaragoza/sortandsearch/issues/1)
 
 ```c++
 // selection sort on arrayTwo
