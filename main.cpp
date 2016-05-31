@@ -140,6 +140,7 @@ void SortAndSearch::selectionSort()
 	int startScan;
 	int	minIndex;
 	int	minValue;
+  int passCount = 0;
 
 	for (startScan = 0; startScan < (SIZE - 1); startScan++) {
 		minIndex = startScan;
@@ -158,6 +159,24 @@ void SortAndSearch::selectionSort()
 			arrayTwo[startScan] = minValue;     // the exchange happens here
 
 			selectionCount++;                   // count exchanges made
+		}
+    
+    passCount++;		// keep track of current pass number
+    
+    /*
+		added code to display the relevant array elements and current pass number
+		to help determine the correct number of exchanges		
+		*/
+		if (passCount >= 193) {
+			cout << "Pass #" << passCount << " exchanges: " << selectionCount << " array[]={..., ";
+			for (int i = 193; i < SIZE; i++) {
+				if (i < SIZE - 1) {
+					cout << arrayTwo[i] << ", ";
+				}
+				else {
+					cout << arrayTwo[i] << " }\n";
+				}
+			}
 		}
 	}
 }
