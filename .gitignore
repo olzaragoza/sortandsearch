@@ -1,9 +1,6 @@
 # my ignores
-*.sln
-*.vcxproj
 *.VC.db
 *.VC.opendb
-*.filters
 .vscode/
 
 ## Ignore Visual Studio temporary files, build results, and
