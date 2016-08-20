@@ -5,7 +5,7 @@
 - [Ways to Contribute](https://github.com/olzaragoza/sortandsearch/blob/master/CONTRIBUTING.md)
 
 ### ToDo **[![ToDo](https://img.shields.io/badge/help-wanted-orange.svg)](#ToDo)**
-- [ ] break up `main.cpp` into `*.cpp` and `*.h` files
+- [x] break up `main.cpp` into `*.cpp` and `*.h` files
 - [ ] implement menu driven functionality
 - [ ] allow user to specify file to search
 - [ ] make use of vectors instead of arrays to dynamically allocate size
