@@ -2,15 +2,16 @@
 
 #pragma once
 
+#include <fstream>
+
 class SortAndSearch
 {
 protected:
-	ifstream inFile;
+	std::ifstream inFile;
 
 public:
 	SortAndSearch(char *inFileName);
 
-	SortAndSearch();
 	~SortAndSearch();
 
 	static const int SIZE = 200;	// size of array
